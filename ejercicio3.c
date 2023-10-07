@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <mpi.h>
 
-// Fuunción a integrar, por ejemplo: f(x) = x^2
+// Fuunción a integrar de ejemplo: f(x) = x^2
 double f(double x) {
     return x * x;
 }

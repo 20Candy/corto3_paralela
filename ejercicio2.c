@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
     int local_data[local_n];
     MPI_Scatter(data, local_n, MPI_INT, local_data, local_n, MPI_INT, 0, MPI_COMM_WORLD);
 
-    // Cada proceso calcula su suma local, máximo local y mínimo local
+    // Cada proceso calcula su suma local máximo local y mínimo local
     for(int i = 0; i < local_n; i++) {
         local_sum += local_data[i];
         if(local_data[i] > local_max) {
